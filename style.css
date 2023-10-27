@@ -1,0 +1,14 @@
+.error{
+    color:red;
+    display:inline !important;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputt{
+    border: 2.5px solid;
+    border-radius: 8px;
+    padding: 3px 10px;
+}

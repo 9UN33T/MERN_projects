@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body style="background: linear-gradient(45deg, #5e5caf, #d3a5a542);">
+    <div class="main_form" style="text-align: center;">
+        <h3>Javascript form validation</h3>
+        <div class="wrap-main">
+            <div class="form-content">
+                <label for="name">Your Name</label>
+                <div>
+                    <input class="inputt" type="text" name="name" id="name">
+                    <br>
+                    <span id="nameerror" style="display: none;">Name field is blank</span>
+                </div>
+                <br>
+                <label for="email">Your Email</label>
+                <div>
+                    <input class="inputt" type="email" name="email" id="email">
+                    <br>
+                    <span id="emailerror" style="display: none;">Email field is blank</span>
+                    <span id="emailerrorpattern" style="display: none;">Email is not in proper format</span>
+                </div>
+                <br>
+                <label for="mobile">Your Mobile</label>
+                <div>
+                    <input class="inputt" type="number" name="mobile" id="mobile">
+                    <br>
+                    <span id="mobileerror" style="display: none;">Mobile field is blank</span>
+                </div>
+                <br>
+                <label for="password">Your Password</label>
+                <div>
+                    <input class="inputt" type="password" name="password" id="password">
+                    <br>
+                    <span id="passworderror" style="display: none;">Password field is blank</span>
+                </div>
+                <br>
+                <label for="confirmpass">Confirm Password</label>
+                <div>
+                    <input class="inputt" type="password" name="confirmpass" id="confirmpass">
+                    <br>
+                    <span id="confirmerror" style="display: none;">Confirm Password field is blank</span>
+                    <span id="notsamepass" style="display: none;">Password field is not matching</span>
+                </div>
+            </div>
+            <br>
+            <div style="display: inline;">
+                <button onclick="validate()">Submit</button>
+            </div>
+            <div style="display: inline;">
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
